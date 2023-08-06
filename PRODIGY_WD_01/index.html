@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="time-section">
+            <div class="time">
+                <p>
+                    <span id="min">00</span>
+                    <span id="double-dot">:</span>
+                    <span id="sec">00</span>
+                    <span id="dot">.</span>
+                    <span id="mic-sec">00</span>
+                </p>    
+            </div>
+            <div class="btn">
+                <button id="lap" >Lap</button>
+                <button id="start">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+        <div class="lap-section">
+            <p>Lap</p>
+            <div class="lap-txt">
+                <ol class="ol"></ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
