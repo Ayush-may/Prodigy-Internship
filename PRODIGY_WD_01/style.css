@@ -18,7 +18,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     display: flex;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
     border-radius: 20px;
     background-color: white;
@@ -99,14 +99,22 @@ body{
     height: 100%;
 }
 
- .active{
-    background-color: rgba(239, 239, 239);
+.lap:active{
+    background-color: #ae9b55;
 }
 
-.lap:active{
-    background-color: black;
+.reset:active{
+    background-color: #ae9b55;
 }
 
 .remove-active{
     background-color: rgb(244, 211, 94);
+}
+
+.wrapper .time-section .btn .active { 
+    background-color: #c0a955;
+}
+
+.wrapper .time-section .btn .removeActive { 
+    background-color: #f4d35e;
 }
