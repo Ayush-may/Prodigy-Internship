@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(86, 185, 255);
+}
+
+.active {
+    /* display: none; */
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 5px 0px black;
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    /* Light grey */
+    border-top: 6px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+input{
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+button{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+}
+
+button:hover{
+    background-color: grey;
+}
+
+.weather-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.weather-area img{
+    width: 300px;
+}
+
+.weather-area p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;   
+}
+
+.img-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#celcius-area{
+    font-size: 30px;
+}
+
+#city-name{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.other-info{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+

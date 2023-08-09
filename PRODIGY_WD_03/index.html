@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="wrapper ">
+        <div class="search-bar center">
+            <input type="text" class="search" placeholder="Enter place name">
+            <button class="btn ">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="inner-wrapper active center">
+            <div class="weather-area">
+                <div class="img-area ">
+                    <img src="assets/404.png" alt="" width="50%">
+                    <p>
+                        <span id="celcius-area">0 <sup>C</sup></span> <br>
+                        <span id="city-name">Sample City</span>
+                    </p>
+
+                </div>
+                <div class="other-info">
+                    <p id="humidity">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>humidity</span> <br>
+                        <span>20</span>
+                    </p>
+                    <p id="wind-speed">
+                        <i class="fa-solid fa-wind"></i>
+                        10
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="loader"></div> -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
