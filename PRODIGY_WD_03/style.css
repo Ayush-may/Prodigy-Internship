@@ -37,6 +37,10 @@ body {
     box-shadow: 5px 0px black;
 }
 
+.wrapper-width{
+    width: 400px;
+}
+
 .loader {
     margin: 0 auto;
     border: 3px solid #f3f3f3;
