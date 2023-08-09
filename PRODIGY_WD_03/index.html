@@ -19,29 +19,33 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
+
+        <div class="loader loader-active" ></div>
+
         <div class="inner-wrapper active center">
             <div class="weather-area">
                 <div class="img-area ">
-                    <img src="assets/404.png" alt="" width="50%">
+                    <img id="image-part" src="assets/404.png" alt="" width="50%">
                     <p>
-                        <span id="celcius-area">0 <sup>C</sup></span> <br>
-                        <span id="city-name">Sample City</span>
+                        <span id="celcius-area">0<sup>C</sup></span> <br>
+                        <span id="city-name" class="city-city">Bihar</span>
                     </p>
 
                 </div>
                 <div class="other-info">
                     <p id="humidity">
-                        <i class="fa-solid fa-droplet"></i>
-                        <span>humidity</span> <br>
-                        <span>20</span>
+                        <span class="txt" id="humid-txt">humidity</span> <br>
+                        <span class="value" id="humid">20</span>
+                        <i class="fa-solid fa-droplet icon"></i>
                     </p>
                     <p id="wind-speed">
-                        <i class="fa-solid fa-wind"></i>
-                        10
+                        <span class="txt" id="wind-txt">wind speed</span> <br>
+                        <span class="value" id="wind">20</span>
+                        <i class="fa-solid fa-wind icon"></i>
                     </p>
                 </div>
             </div>
-            <!-- <div class="loader"></div> -->
+        
         </div>
     </div>
 
