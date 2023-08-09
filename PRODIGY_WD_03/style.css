@@ -1,142 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-/* font-family: 'Poppins', sans-serif;    */
-
-@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Preahvihear', sans-serif;   
 }
 
-body {
-    background-color: #56b9ff;
-}
 
-.active {
-    display: none;
-}
-
-.center{
-    margin: 0 auto;
-}
-
-.wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 30px 40px;
-    border-radius: 20px;
+.container{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    box-shadow: 5px 0px black;
+    justify-content: space-evenly;
 }
 
-.wrapper-width{
-    width: 400px;
-}
-
-.loader {
-    margin: 0 auto;
-    border: 3px solid #f3f3f3;
-    border-top: 3px solid #3498db;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-input{
-    border: 1px solid #56b9ff;
-    padding: 10px;
-    margin-right: 10px;
-    border-radius: 5px;
+.playerOne{
+    background-color: aquamarine;
 }
 
 button{
-    border: 1px solid #56b9ff;
-    border-radius: 20px;
-    background-color: white;
-    height: 40px;
-    width: 40px;
-}
-
-button:hover{
-    background-color: grey;
-}
-
-.weather-area{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-
-.weather-area img{
-    width: 300px;
-}
-
-.weather-area p {
-    text-align: center;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.img-area{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-#celcius-area{
-    font-size: 30px;
-}
-
-#city-name{
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.other-info{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 50px;
-}
-
-.icon{
-    color: black;
-    width: 20px;
-}
-
-.value{
-    font-size: 20px;
-}
-
-.txt{
-    font-weight: 900;
-    
-}
-
-.loader-active{
-    display: block;
-}
-
-.loader-de-active{
-    display: none;
+    width: 100px;
+    height: 100px;
 }

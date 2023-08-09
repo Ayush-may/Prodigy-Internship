@@ -1,55 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" type="text/css">
+    <title>TIC-TAC-TOE</title>
 </head>
-
 <body>
-    <div class="wrapper ">
-        <div class="search-bar center">
-            <input type="text" class="search" placeholder="Enter place name">
-            <button class="btn ">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </div>
-
-        <!-- <div class="loader loader-active" ></div> -->
-
-        <div class="inner-wrapper active center">
-            <div class="weather-area">
-                <div class="img-area ">
-                    <img id="image-part" src="" alt="" width="50%">
-                    <p>
-                        <span id="celcius-area">0<sup>C</sup></span> <br>
-                        <span id="city-name" class="city-city">Bihar</span>
-                    </p>
-
+    <div class="wrapper">
+        <div class="container">
+            <div class="player playerOne">
+                <div class="name">
+                    <p>Player 1</p>
                 </div>
-                <div class="other-info">
-                    <p id="humidity">
-                        <span class="txt" id="humid-txt">humidity</span> <br>
-                        <span class="value" id="humid">20</span>
-                        <i class="fa-solid fa-droplet icon"></i>
-                    </p>
-                    <p id="wind-speed">
-                        <span class="txt" id="wind-txt">wind speed</span> <br>
-                        <span class="value" id="wind">20</span>
-                        <i class="fa-solid fa-wind icon"></i>
-                    </p>
+                <div class="player-info">
+                             
                 </div>
             </div>
-        
+            <div class="game-section">
+                <div class="inside-game">
+                    <button class="button one"></button>
+                    <button class="button two"></button>
+                    <button class="button thee"></button>
+                    <button class="button four"></button>
+                    <button class="button five"></button>
+                    <button class="button six"></button>
+                    <button class="button seven"></button>
+                    <button class="button eight"></button>
+                    <button class="button nine"></button>
+
+                </div>
+            </div>
+            <div class="player player-2">
+                <div class="name">
+                    <p>Player 1</p>
+                </div>
+                <div class="player-info">
+                             
+                </div>
+            </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
-
 </html>
